@@ -48,6 +48,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                 case "Visualizza articoli":
                     // TODO: (2) aggiungere visualizzazione articoli inseriti nella listbox
                     // ... lstElenco.Items.Add(a.Visualizzati()); 
+                    foreach(Articolo a in articoli)
                     lstElenco.items.Add(a.Visualizzati());
                     break;
             }
@@ -63,7 +64,8 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             // TODO: (3) aggiungere visualizzazione dettaglio articolo nelle label
             // ... lblDescrizione.Text = articoli[index].Descrizione;
             lblDescrizione.Text = articoli[index].Descrizione;
-             
+            lblUnitaMisura.Text = articoli[index].UnitaMisura;
+
 
         }
     }
